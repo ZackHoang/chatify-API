@@ -27,7 +27,7 @@ app.use(
         },
         name: 'chatify',
         store: new PrismaSessionStore(prisma, {
-            checkPeriod: 2 * 60 * 1000, //ms
+            checkPeriod: 0, //ms
             dbRecordIdIsSessionId: true,
             dbRecordIdFunction: undefined,
         }),
