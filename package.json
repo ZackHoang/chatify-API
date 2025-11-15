@@ -1,0 +1,43 @@
+{
+    "name": "chatify-api",
+    "version": "1.0.0",
+    "description": "A secure messaging app, the API.",
+    "main": "index.js",
+    "scripts": {
+        "test": "NODE_ENV=test jest",
+        "dev": "NODE_ENV=development node --watch server.js",
+        "debug": "NODE_ENV=development node --inspect server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ZackHoang/chatify-API.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "bugs": {
+        "url": "https://github.com/ZackHoang/chatify-API/issues"
+    },
+    "homepage": "https://github.com/ZackHoang/chatify-API#readme",
+    "devDependencies": {
+        "@eslint/js": "^9.39.1",
+        "eslint": "^9.39.1",
+        "globals": "^16.5.0",
+        "jest": "^30.2.0",
+        "prettier": "3.6.2",
+        "prisma": "^6.19.0",
+        "supertest": "^7.1.4"
+    },
+    "dependencies": {
+        "@prisma/client": "^6.19.0",
+        "@quixo3/prisma-session-store": "^3.1.13",
+        "cors": "^2.8.5",
+        "dotenv": "^17.2.3",
+        "express": "^5.1.0",
+        "express-session": "^1.18.2",
+        "express-validator": "^7.3.0",
+        "passport": "^0.7.0",
+        "passport-local": "^1.0.0"
+    }
+}
