@@ -6,7 +6,8 @@
     "scripts": {
         "test": "NODE_ENV=test jest --detectOpenHandles",
         "dev": "NODE_ENV=development node --watch server.js",
-        "debug": "NODE_ENV=development node --inspect server.js"
+        "debug": "NODE_ENV=development node --inspect server.js",
+        "db:setup": "npx prisma migrate dev && npx prisma generate"
     },
     "repository": {
         "type": "git",
